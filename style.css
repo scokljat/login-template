@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Gabriela", serif;
+  margin: 0;
+  margin-bottom: -15px;
+  overflow: hidden;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+  align-items: center;
+}
+h1 {
+  font-size: 28;
+}
+h2 {
+  font-size: 16;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 12;
+  margin: 0;
+}
+a {
+  color: #5f5ff0;
+  font-size: 12;
+  text-decoration-line: none;
+}
+
+input {
+  border-radius: 5px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.labels {
+  font-size: 12;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstLabel {
+  text-align: left;
+}
+.secondLabel {
+  text-align: right;
+}
+.thirdBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #faf3f3;
+  width: 40%;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #a048f3;
+}
+
+@media (min-width: 576px) {
+  h4 {
+    margin-bottom: 0;
+    font-size: 12;
+  }
+
+  .wrap {
+    background-image: url("egor-vikhrev-6-QfZVVzWiQ-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .container2 {
+    color: #faf3f3;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .secondBtn {
+    background-color: #915c5c;
+    color: #f7f5ee;
+    border-radius: 7px;
+    height: 40px;
+    margin: 20px;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+  }
+  .container4 {
+    margin-left: 0;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: baseline;
+    margin-right: 10px;
+  }
+  .secondBtn {
+    margin: 0 10px;
+    border-radius: 7px;
+
+    height: 30px;
+    color: #444749;
+    background-color: #fcfcf8;
+    border: 0;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+  }
+  .wrapper {
+    display: none;
+  }
+  .container1 {
+    display: none;
+  }
+}
