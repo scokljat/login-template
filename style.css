@@ -11,14 +11,21 @@ body {
   margin: 0;
   margin-bottom: -15px;
   overflow: hidden;
+  background-image: none;
 }
-.container3 {
+.container1 {
+  display: none;
+}
+.registration {
+  display: none;
+}
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 15px;
 }
-.container4 {
+.container2 {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -26,13 +33,12 @@ body {
   margin: 15px;
   align-items: center;
 }
-.container5 {
+.logIn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
-
 h1 {
   font-size: 28;
 }
@@ -50,20 +56,17 @@ a {
   font-size: 12;
   text-decoration-line: none;
 }
-
 input {
   border-radius: 5px;
   height: 50px;
   margin: 10px 0;
 }
-
 .labels {
   font-size: 12;
   vertical-align: baseline;
   display: flex;
   justify-content: space-between;
 }
-
 .firstLabel {
   text-align: left;
 }
@@ -76,23 +79,30 @@ input {
   align-items: center;
   color: #faf3f3;
   width: 40%;
-  border-radius: 5px;
+  border-radius: 7px;
   height: 50px;
   background-color: #a048f3;
 }
 
 @media (min-width: 576px) {
+  form {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 0;
+  }
+  .wrap {
+    background-image: url("egor-vikhrev-6-QfZVVzWiQ-unsplash.jpg");
+    background-size: cover;
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column;
+  }
   h4 {
     margin-bottom: 0;
     font-size: 12;
   }
-
-  .wrap {
-    background-image: url("egor-vikhrev-6-QfZVVzWiQ-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .container2 {
+  .features {
     color: #faf3f3;
     display: flex;
     min-height: 100vh;
@@ -101,45 +111,27 @@ input {
     align-items: center;
     text-align: center;
   }
-  .secondBtn {
+  .firstBtn {
     background-color: #915c5c;
     color: #f7f5ee;
     border-radius: 7px;
     height: 40px;
     margin: 20px;
   }
-  form {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 0;
-  }
-  .container4 {
-    margin-left: 0;
-  }
-  .wrapper {
+  .registration {
     display: flex;
     justify-content: flex-end;
     vertical-align: baseline;
     margin-right: 10px;
   }
   .secondBtn {
-    margin: 0 10px;
     border-radius: 7px;
-
     height: 30px;
     color: #444749;
     background-color: #fcfcf8;
     border: 0;
   }
-}
-@media (max-width: 768px) {
-  body {
-    background-image: none;
-  }
-  .wrapper {
-    display: none;
-  }
-  .container1 {
-    display: none;
+  .logIn {
+    width: 70%;
   }
 }
