@@ -9,9 +9,6 @@ html {
 body {
   font-family: "Gabriela", serif;
   margin: 0;
-  margin-bottom: -15px;
-  overflow: hidden;
-  background-image: none;
 }
 .container1 {
   display: none;
@@ -23,15 +20,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 15px;
+  margin-bottom: 10px;
 }
 .container2 {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  margin: 15px;
   align-items: center;
+  margin: 0 10px;
 }
 .logIn {
   display: flex;
@@ -40,20 +37,20 @@ body {
   width: 100%;
 }
 h1 {
-  font-size: 28;
+  font-size: 28px;
 }
 h2 {
-  font-size: 16;
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 10px;
 }
 p {
-  font-size: 12;
+  font-size: 12px;
   margin: 0;
 }
 a {
   color: #5f5ff0;
-  font-size: 12;
+  font-size: 12px;
   text-decoration-line: none;
 }
 input {
@@ -62,15 +59,15 @@ input {
   margin: 10px 0;
 }
 .labels {
-  font-size: 12;
+  font-size: 12px;
   vertical-align: baseline;
   display: flex;
   justify-content: space-between;
 }
-.firstLabel {
+.password {
   text-align: left;
 }
-.secondLabel {
+.forgotPassword {
   text-align: right;
 }
 .thirdBtn {
@@ -89,9 +86,10 @@ input {
     display: grid;
     grid-template-columns: 30% 70%;
     gap: 0;
+    height: 100%;
   }
   .wrap {
-    background-image: url("egor-vikhrev-6-QfZVVzWiQ-unsplash.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
   }
   .container1 {
@@ -100,7 +98,7 @@ input {
   }
   h4 {
     margin-bottom: 0;
-    font-size: 12;
+    font-size: 12px;
   }
   .features {
     color: #faf3f3;
@@ -122,7 +120,7 @@ input {
     display: flex;
     justify-content: flex-end;
     vertical-align: baseline;
-    margin-right: 10px;
+    margin: 10px;
   }
   .secondBtn {
     border-radius: 7px;
