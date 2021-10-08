@@ -10,24 +10,24 @@ body {
   font-family: "Gabriela", serif;
   margin: 0;
 }
-.container1 {
+.enterpriseContent {
   display: none;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .registration {
   display: none;
 }
-.wrapper {
+.logInWrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-.container2 {
-  display: flex;
-  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   margin: 0 10px;
 }
 .logIn {
@@ -36,19 +36,15 @@ body {
   justify-content: center;
   width: 100%;
 }
-h1 {
+.signInHead {
   font-size: 28px;
 }
-h2 {
+.signInSubhead {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 10px;
 }
-p {
-  font-size: 12px;
-  margin: 0;
-}
-a {
+.domain {
   color: #5f5ff0;
   font-size: 12px;
   text-decoration-line: none;
@@ -70,7 +66,7 @@ input {
 .forgotPassword {
   text-align: right;
 }
-.thirdBtn {
+.logInBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,50 +75,57 @@ input {
   border-radius: 7px;
   height: 50px;
   background-color: #a048f3;
+  border: 0;
 }
 
 @media (min-width: 576px) {
-  form {
+  .wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
-    gap: 0;
-    height: 100%;
+    min-height: 100vh;
   }
-  .wrap {
-    background-image: url("images/background.jpg");
-    background-size: cover;
-  }
-  .container1 {
+  .enterpriseContent {
     display: flex;
     flex-direction: column;
-  }
-  h4 {
-    margin-bottom: 0;
-    font-size: 12px;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    justify-content: center;
+    height: 100%;
   }
   .features {
     color: #faf3f3;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .firstBtn {
+  .enterpriseSubhead {
+    font-size: 12px;
+  }
+  .enterpriseHead {
+    font-size: 18px;
+    margin: 0;
+  }
+  .description {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .demoBtn {
     background-color: #915c5c;
     color: #f7f5ee;
     border-radius: 7px;
     height: 40px;
     margin: 20px;
+    border: 0;
   }
   .registration {
     display: flex;
     justify-content: flex-end;
-    vertical-align: baseline;
+    align-items: center;
     margin: 10px;
   }
-  .secondBtn {
+  .registrationBtn {
     border-radius: 7px;
     height: 30px;
     color: #444749;
@@ -131,5 +134,9 @@ input {
   }
   .logIn {
     width: 70%;
+  }
+  .email {
+    font-size: 12px;
+    margin-bottom: 0;
   }
 }

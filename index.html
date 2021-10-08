@@ -10,33 +10,33 @@
     <title>InVision - Sign In</title>
   </head>
   <body>
-    <form>
-      <div class="wrap">
-        <div class="container1">
-          <div class="features">
-            <h4>InVision Enterprise Edition</h4>
-            <br />
-            <h3>The design collaboration cloud for larger teams</h3>
-            <p>
-              Unlimited team members. Unlimited projects.<br />Unlimited
-              creativity.
-            </p>
-            <button class="firstBtn">Schedule a demo</button>
-          </div>
+    <div class="wrapper">
+      <div class="enterpriseContent">
+        <div class="features">
+          <h4 class="enterpriseSubhead">InVision Enterprise Edition</h4>
+          <br />
+          <h3 class="enterpriseHead">
+            The design collaboration cloud for larger teams
+          </h3>
+          <p class="description">
+            Unlimited team members. Unlimited projects.<br />Unlimited
+            creativity.
+          </p>
+          <button class="demoBtn" type="submit">Schedule a demo</button>
         </div>
       </div>
-      <div class="wrapper">
+      <div class="wrap">
         <div class="registration">
           <p>Don't have an account?</p>
-          <button class="secondBtn">Get started</button>
+          <button class="registrationBtn" type="submit">Get started</button>
         </div>
-        <div class="container2">
+        <div class="logInWrapper">
           <div class="logIn">
-            <h1>Sign in to InVision</h1>
-            <h2>Enter your details below</h2>
-            <p>Email address</p>
+            <h1 class="signInHead">Sign in to InVision</h1>
+            <h2 class="signInSubhead">Enter your details below</h2>
+            <p class="email">Email address</p>
             <input name="emailAddress" type="text" />
-            <a href="#">Know your team domain?</a>
+            <a class="domain" href="#">Know your team domain?</a>
             <br />
             <div class="labels">
               <label class="password">Password</label>
@@ -44,10 +44,10 @@
             </div>
             <input name="password" type="text" />
             <br />
-            <button class="thirdBtn" type="submit">Sign in</button>
+            <button class="logInBtn" type="submit">Sign in</button>
           </div>
         </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>
