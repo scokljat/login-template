@@ -10,9 +10,8 @@ Inspired by [InVision](https://projects.invisionapp.com/d/login).
 
 ## Assets
 
--[Gabriela font](https://fonts.google.com/specimen/Gabriela)
-
-- -[Photo of autumn](https://unsplash.com/photos/6-QfZVVzWiQ)
+[Gabriela font](https://fonts.google.com/specimen/Gabriela)
+[Photo of autumn](https://unsplash.com/photos/6-QfZVVzWiQ)
 
 ## License
 
